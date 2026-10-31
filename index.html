@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Hotel</title>
+  <meta name="description" content="Casa – a small hotel to feel at home.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Casa</a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#rooms" data-i18n="nav.rooms">Rooms</a>
+        <a href="#amenities" data-i18n="nav.amenities">Amenities</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#location" data-i18n="nav.location">Location</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="de">DE</button>
+          <button type="button" data-lang="pt">PT</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav">
+          <span class="sr-only" data-i18n="nav.menu">Menu</span>
+          <span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Boutique hotel</p>
+        <h1 data-i18n="hero.title">Feel at home, far from home.</h1>
+        <p class="lead" data-i18n="hero.lead">A small hotel with a few carefully designed rooms, a quiet courtyard and breakfast made from local produce.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact" data-i18n="hero.cta">Request a stay</a>
+          <a class="btn btn-ghost" href="#rooms" data-i18n="hero.secondary">See the rooms</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split">
+        <div>
+          <p class="eyebrow" data-i18n="about.eyebrow">Our house</p>
+          <h2 data-i18n="about.title">A home with a few more guests</h2>
+          <p data-i18n="about.p1">Casa started as a family house. Today it welcomes travellers who want calm, personal service and a place that feels lived in rather than staged.</p>
+          <p data-i18n="about.p2">We know our guests by name, recommend our favourite places in the neighbourhood and make sure every stay feels easy.</p>
+        </div>
+        <ul class="facts">
+          <li><strong>12</strong><span data-i18n="about.fact1">rooms</span></li>
+          <li><strong>24h</strong><span data-i18n="about.fact2">reception</span></li>
+          <li><strong>3</strong><span data-i18n="about.fact3">languages spoken</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="rooms">
+      <div class="container">
+        <p class="eyebrow" data-i18n="rooms.eyebrow">Stay</p>
+        <h2 data-i18n="rooms.title">Rooms</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-img img-1" role="img" aria-label=""></div>
+            <div class="card-body">
+              <h3 data-i18n="rooms.r1.name">Classic Room</h3>
+              <p data-i18n="rooms.r1.desc">Cosy double room with a view of the courtyard.</p>
+              <ul class="meta">
+                <li data-i18n="rooms.r1.size">18 m²</li>
+                <li data-i18n="rooms.r1.guests">Up to 2 guests</li>
+              </ul>
+              <p class="price"><span data-i18n="rooms.from">from</span> <strong>€95</strong> <span data-i18n="rooms.night">/ night</span></p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img img-2" role="img" aria-label=""></div>
+            <div class="card-body">
+              <h3 data-i18n="rooms.r2.name">Superior Room</h3>
+              <p data-i18n="rooms.r2.desc">More space, a king-size bed and a small balcony.</p>
+              <ul class="meta">
+                <li data-i18n="rooms.r2.size">24 m²</li>
+                <li data-i18n="rooms.r2.guests">Up to 2 guests</li>
+              </ul>
+              <p class="price"><span data-i18n="rooms.from">from</span> <strong>€125</strong> <span data-i18n="rooms.night">/ night</span></p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img img-3" role="img" aria-label=""></div>
+            <div class="card-body">
+              <h3 data-i18n="rooms.r3.name">Family Suite</h3>
+              <p data-i18n="rooms.r3.desc">Two connected rooms with a living area – ideal for families.</p>
+              <ul class="meta">
+                <li data-i18n="rooms.r3.size">38 m²</li>
+                <li data-i18n="rooms.r3.guests">Up to 4 guests</li>
+              </ul>
+              <p class="price"><span data-i18n="rooms.from">from</span> <strong>€175</strong> <span data-i18n="rooms.night">/ night</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="amenities">
+      <div class="container">
+        <p class="eyebrow" data-i18n="amenities.eyebrow">Included</p>
+        <h2 data-i18n="amenities.title">Amenities</h2>
+        <ul class="amenities">
+          <li><span class="icon" aria-hidden="true">☕</span><span data-i18n="amenities.a1">Breakfast with local produce</span></li>
+          <li><span class="icon" aria-hidden="true">📶</span><span data-i18n="amenities.a2">Free high-speed Wi-Fi</span></li>
+          <li><span class="icon" aria-hidden="true">🌿</span><span data-i18n="amenities.a3">Quiet garden courtyard</span></li>
+          <li><span class="icon" aria-hidden="true">🛎️</span><span data-i18n="amenities.a4">24-hour reception</span></li>
+          <li><span class="icon" aria-hidden="true">🚲</span><span data-i18n="amenities.a5">Bike rental</span></li>
+          <li><span class="icon" aria-hidden="true">🐾</span><span data-i18n="amenities.a6">Pets welcome on request</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <p class="eyebrow" data-i18n="gallery.eyebrow">Impressions</p>
+        <h2 data-i18n="gallery.title">Gallery</h2>
+        <div class="gallery">
+          <div class="g g1"></div>
+          <div class="g g2"></div>
+          <div class="g g3"></div>
+          <div class="g g4"></div>
+          <div class="g g5"></div>
+        </div>
+        <p class="note" data-i18n="gallery.note">Photos coming soon.</p>
+      </div>
+    </section>
+
+    <section class="section" id="location">
+      <div class="container split">
+        <div>
+          <p class="eyebrow" data-i18n="location.eyebrow">Find us</p>
+          <h2 data-i18n="location.title">Location</h2>
+          <p data-i18n="location.text">In a quiet side street, a few minutes' walk from the old town, restaurants and public transport.</p>
+          <address>
+            Casa Hotel<br>
+            <span data-i18n="location.street">Street and number</span><br>
+            <span data-i18n="location.city">Postcode, City, Country</span>
+          </address>
+        </div>
+        <div class="map-placeholder" data-i18n="location.map">Map</div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container split">
+        <div>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Get in touch</p>
+          <h2 data-i18n="contact.title">Request a stay</h2>
+          <p data-i18n="contact.text">Send us your dates and we will get back to you within 24 hours.</p>
+          <ul class="contact-list">
+            <li><span data-i18n="contact.phone">Phone</span>: <a href="tel:+000000000">+00 000 000 000</a></li>
+            <li><span data-i18n="contact.email">Email</span>: <a href="mailto:hello@casa-hotel.example">hello@casa-hotel.example</a></li>
+          </ul>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <label><span data-i18n="form.name">Name</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label><span data-i18n="form.email">Email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <div class="row">
+            <label><span data-i18n="form.checkin">Check-in</span>
+              <input name="checkin" type="date" required>
+            </label>
+            <label><span data-i18n="form.checkout">Check-out</span>
+              <input name="checkout" type="date" required>
+            </label>
+          </div>
+          <label><span data-i18n="form.guests">Guests</span>
+            <select name="guests">
+              <option>1</option><option selected>2</option><option>3</option><option>4</option>
+            </select>
+          </label>
+          <label><span data-i18n="form.message">Message</span>
+            <textarea name="message" rows="4"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit" data-i18n="form.submit">Send request</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Casa Hotel</span>
+      <span><a href="#" data-i18n="footer.imprint">Imprint</a> · <a href="#" data-i18n="footer.privacy">Privacy</a></span>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
